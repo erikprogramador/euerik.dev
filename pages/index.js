@@ -9,8 +9,8 @@ export default function Home() {
 
       <div className='h-screen w-screen flex items-center justify-center flex-col px-6 md:px-0'>
         <div className='mb-6'>
-          <h1 className='text-4xl md:text-6xl text-gray-900 text-center'>
-            <strong>Olá,</strong> <br /> Eu sou Erik o Dev
+          <h1 className='text-6xl text-gray-900 text-center'>
+            <strong>Olá,</strong> <br /> Eu sou Erik
           </h1>
           <h2 className='text-center text-sm md:text-xl text-gray-700 uppercase tracking-wider'>
             Desenvolvedor, Designer, Empreendedor
