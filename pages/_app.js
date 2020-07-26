@@ -10,6 +10,13 @@ export default function MyApp({ Component, pageProps }) {
           href='/static/favicon.png'
           type='image/x-icon'
         />
+
+        <title>EuErik.dev</title>
+
+        <meta
+          name='description'
+          content='Desenvolvedor, Designer e Empreendedor'
+        />
       </Head>
 
       <Component {...pageProps} />
