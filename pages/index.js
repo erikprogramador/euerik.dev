@@ -13,7 +13,8 @@ export default function Home() {
             <strong>Olá,</strong> <br /> Eu sou Erik
           </h1>
           <h2 className='text-center text-sm md:text-xl text-gray-700 uppercase tracking-wider'>
-            Desenvolvedor, Designer, Empreendedor
+            Desenvolvedor por paixão, Designer por curiosidade, Empreendedor por
+            natureza
           </h2>
         </div>
 

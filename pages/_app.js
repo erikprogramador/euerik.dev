@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
 
         <meta
           name='description'
-          content='Desenvolvedor, Designer e Empreendedor'
+          content='Desenvolvedor por paixão, Designer por curiosidade, Empreendedor por natureza'
         />
       </Head>
 
