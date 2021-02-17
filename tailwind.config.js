@@ -14,7 +14,7 @@ module.exports = {
       body: '#272536',
       branding: {
         adalov: '#000000',
-        simulaimob: '#C4C4C4',
+        simulaimob: '#C4CAEB',
         simulaplano: '#FF1617',
         salescity: '#1A1A1A',
       },
