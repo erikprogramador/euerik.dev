@@ -15,12 +15,12 @@ function Presentation() {
             </h2>
 
             <p className='mb-6 leading-10 text-body'>
-              Sou Erik Vanderlei Fernandes, estou na área da tecnologia desde
-              2010, sempre buscando auxiliar negocios no melhor uso de seus
-              recursos. Com o objetivo de auxiliar meus clientes e parceiros
-              busco estudar diversas áreas... sério, diversas mesmo... Desde
-              desenvolvimento de sistemas, marketing, audivisual, até mecânica
-              de autos.
+              Sou <strong>Erik Vanderlei Fernandes</strong>, estou na área da
+              tecnologia desde 2010, sempre buscando auxiliar negocios no melhor
+              uso de seus recursos. Com o objetivo de auxiliar meus clientes e
+              parceiros busco estudar diversas áreas...{' '}
+              <strong>sério, diversas mesmo</strong>... Desde desenvolvimento de
+              sistemas, marketing, audivisual, até mecânica de autos.
             </p>
 
             <p className='mb-6 leading-10 text-body'>
@@ -29,10 +29,10 @@ function Presentation() {
             </p>
 
             <p className='mb-10 leading-10 text-body'>
-              Hoje sou sócio da Adalov, empresa onde o objetivo é “Resolver o
-              problema do cliente”. Por isso estou sempre buscando me atualizar,
-              e olhar outros pontos de vista fora da tecnologia. Para que eu
-              consiga resolver o problema do cliente!
+              Hoje sou sócio da Adalov, empresa onde o nosso objetivo é{' '}
+              <strong>“Resolver o problema do cliente”</strong>. Por isso estou
+              sempre buscando me atualizar, e olhar outros pontos de vista fora
+              da tecnologia. Para que eu consiga resolver o problema do cliente!
             </p>
 
             <GoToButton go='projetos'>Meus projetos!</GoToButton>

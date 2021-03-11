@@ -1,7 +1,8 @@
 import React from 'react'
 import GoToButton from '../../components/GoToButton'
+import Project from '../../components/Project'
 
-function Projects() {
+function Projects({ projects }) {
   return (
     <section
       className='relative flex flex-col min-h-screen py-16 justify-evenly'
@@ -24,62 +25,11 @@ function Projects() {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 shadow-2xl sm:grid-cols-2'>
-          <a
-            href='https://adalov.com'
-            target='_blank'
-            className='flex flex-col items-center justify-center h-48 p-10 text-center rounded-tl-lg rounded-tr-lg sm:h-64 bg-branding-adalov text-light sm:rounded-tr-none sm:rounded-tl-lg'
-          >
-            <div className='mb-3'>
-              <img
-                src='/static/adalov.png'
-                alt='Logo Adalov'
-                className='w-16'
-              />
-            </div>
-
-            <h3 className='text-xl font-semibold'>Adalov</h3>
-          </a>
-
-          <a
-            href='https://planoeplanosimulador.com.br'
-            target='_blank'
-            className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaplano text-light sm:rounded-tr-lg'
-          >
-            <div className='mb-3'>
-              <img
-                src='/static/planoeplano.png'
-                alt='Logo Plano&amp;Planop'
-                className='w-16'
-              />
-            </div>
-
-            <h3 className='text-xl font-semibold'>Plano&amp;PlanoSimulador</h3>
-          </a>
-
-          <div className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaimob text-light sm:rounded-bl-lg'>
-            <div className='mb-3'>
-              <img
-                src='/static/simulaimob.png'
-                alt='Logo SimulaImob'
-                className='w-16'
-              />
-            </div>
-
-            <h3 className='text-xl font-semibold'>Simulaimob</h3>
-          </div>
-
-          <div className='flex flex-col items-center justify-center h-48 p-10 text-center rounded-bl-lg rounded-br-lg sm:h-64 sm:rounded-bl-none sm:rounded-br-lg bg-branding-salescity text-light'>
-            <div className='mb-3'>
-              <img
-                src='/static/salescity.png'
-                alt='Logo Sales City'
-                className='w-16'
-              />
-            </div>
-
-            <h3 className='text-xl font-semibold'>Sales City</h3>
-          </div>
+        <div className='grid grid-cols-1 overflow-hidden rounded-lg shadow-2xl sm:grid-cols-2'>
+          {projects &&
+            projects.map(project => (
+              <Project project={project} key={project.metadata.slug} />
+            ))}
         </div>
       </div>
     </section>
