@@ -9,22 +9,26 @@ function Projects() {
     >
       <div className='container grid grid-cols-1 gap-20 px-6 mx-auto sm:px-0 md:grid-cols-2'>
         <div className='flex flex-col justify-center mx-auto'>
-          <h2 className='mb-4 text-3xl font-semibold text-title'>
+          <h2 className='mb-10 text-3xl font-semibold text-title'>
             Meus projetos!
           </h2>
 
           <p className='mb-6 leading-10 text-body'>
             Todos nós temos projetos, alguns que funcionam muito bem, outros que
             nem tanto, mas servem de aprendizado para que a gente consiga
-            evoluir e corrigir nossos erros.
+            evoluir e melhorar para os proximos.
           </p>
+
+          <div>
+            <GoToButton go='comunidade'>Eu na comunidade!</GoToButton>
+          </div>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2'>
+        <div className='grid grid-cols-1 shadow-2xl sm:grid-cols-2'>
           <a
             href='https://adalov.com'
             target='_blank'
-            className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-adalov text-light rounded-tl-3xl rounded-tr-3xl sm:rounded-tr-none sm:rounded-tl-3xl'
+            className='flex flex-col items-center justify-center h-48 p-10 text-center rounded-tl-lg rounded-tr-lg sm:h-64 bg-branding-adalov text-light sm:rounded-tr-none sm:rounded-tl-lg'
           >
             <div className='mb-3'>
               <img
@@ -40,7 +44,7 @@ function Projects() {
           <a
             href='https://planoeplanosimulador.com.br'
             target='_blank'
-            className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaplano text-light sm:rounded-tr-3xl'
+            className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaplano text-light sm:rounded-tr-lg'
           >
             <div className='mb-3'>
               <img
@@ -53,7 +57,7 @@ function Projects() {
             <h3 className='text-xl font-semibold'>Plano&amp;PlanoSimulador</h3>
           </a>
 
-          <div className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaimob text-light sm:rounded-bl-3xl'>
+          <div className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 bg-branding-simulaimob text-light sm:rounded-bl-lg'>
             <div className='mb-3'>
               <img
                 src='/static/simulaimob.png'
@@ -65,7 +69,7 @@ function Projects() {
             <h3 className='text-xl font-semibold'>Simulaimob</h3>
           </div>
 
-          <div className='flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 rounded-br-3xl rounded-bl-3xl sm:rounded-bl-none sm:rounded-br-3xl bg-branding-salescity text-light'>
+          <div className='flex flex-col items-center justify-center h-48 p-10 text-center rounded-bl-lg rounded-br-lg sm:h-64 sm:rounded-bl-none sm:rounded-br-lg bg-branding-salescity text-light'>
             <div className='mb-3'>
               <img
                 src='/static/salescity.png'
@@ -77,10 +81,6 @@ function Projects() {
             <h3 className='text-xl font-semibold'>Sales City</h3>
           </div>
         </div>
-      </div>
-
-      <div className='container px-6 mx-auto mt-8 text-center sm:px-0'>
-        <GoToButton go='comunidade'>Eu na comunidade!</GoToButton>
       </div>
     </section>
   )
