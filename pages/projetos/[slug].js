@@ -7,6 +7,7 @@ function Projeto({ project }) {
     <ProjectLayout
       title={project.metadata.title}
       description={project.metadata.description}
+      banner={project.metadata.banner}
     >
       <h1>{project.metadata.title}</h1>
     </ProjectLayout>
