@@ -7,9 +7,16 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Presentation />
-      <Projects />
-      <Community />
+      <div className='relative' id='base-offset'>
+        <img
+          src='/static/logo.svg'
+          alt='Logo EuErik.dev'
+          className='sticky w-12 mb-10 top-4 left-4'
+        />
+        <Presentation />
+        <Projects />
+        <Community />
+      </div>
     </>
   )
 }

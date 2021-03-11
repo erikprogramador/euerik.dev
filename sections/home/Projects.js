@@ -7,14 +7,8 @@ function Projects() {
       className='relative flex flex-col min-h-screen py-16 justify-evenly'
       id='projetos'
     >
-      <img
-        src='/static/logo.svg'
-        alt='Logo EuErik.dev'
-        className='absolute w-12 mb-10 top-4 left-4'
-      />
-
       <div className='container px-6 mx-auto sm:px-0'>
-        <div class='w-full max-w-xl mx-auto text-center'>
+        <div className='w-full max-w-xl mx-auto text-center'>
           <h2 className='mb-4 text-3xl font-semibold text-title'>
             Me apresentando!
           </h2>
@@ -28,14 +22,18 @@ function Projects() {
       </div>
 
       <div className='container px-6 py-8 mx-auto sm:px-0'>
-        <div class='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10'>
+        <div className='grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4'>
           <a
             href='https://adalov.com'
             target='_blank'
             className='flex flex-col items-center text-center'
           >
             <div className='flex items-center justify-center w-32 h-32 mb-3 rounded-full bg-branding-adalov text-light'>
-              <img src='/static/adalov.png' alt='Logo Adalov' class='w-16' />
+              <img
+                src='/static/adalov.png'
+                alt='Logo Adalov'
+                className='w-16'
+              />
             </div>
 
             <h3 className='text-xl font-semibold text-title'>Adalov</h3>
@@ -46,7 +44,7 @@ function Projects() {
               <img
                 src='/static/simulaimob.png'
                 alt='Logo SimulaImob'
-                class='w-16'
+                className='w-16'
               />
             </div>
 
@@ -62,7 +60,7 @@ function Projects() {
               <img
                 src='/static/planoeplano.png'
                 alt='Logo Plano&amp;Planop'
-                class='w-16'
+                className='w-16'
               />
             </div>
 
@@ -76,7 +74,7 @@ function Projects() {
               <img
                 src='/static/salescity.png'
                 alt='Logo Sales City'
-                class='w-16'
+                className='w-16'
               />
             </div>
 

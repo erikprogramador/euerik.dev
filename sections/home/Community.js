@@ -5,14 +5,8 @@ function Community() {
   return (
     <section
       className='relative flex items-center justify-center min-h-screen py-16'
-      id='apresentacao'
+      id='comunidade'
     >
-      <img
-        src='/static/logo.svg'
-        alt='Logo EuErik.dev'
-        className='absolute w-12 mb-10 top-4 left-4'
-      />
-
       <div className='container px-6 mx-auto sm:px-0'>
         <div className='flex flex-col items-center gap-20 md:grid md:grid-cols-2'>
           <div>
@@ -52,7 +46,7 @@ function Community() {
                 target='_blank'
                 className='relative flex items-center justify-center overflow-hidden rounded-lg'
               >
-                <div class='absolute inset-0 bg-main opacity-75'></div>
+                <div className='absolute inset-0 opacity-75 bg-main'></div>
 
                 <img
                   src='https://img.youtube.com/vi/5bvwsA1lVmo/sddefault.jpg'
@@ -61,15 +55,15 @@ function Community() {
                 />
 
                 <svg
-                  class='w-12 h-12 absolute text-light'
+                  className='absolute w-12 h-12 text-light'
                   fill='currentColor'
                   viewBox='0 0 20 20'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                   ></path>
                 </svg>
               </a>
@@ -77,7 +71,7 @@ function Community() {
               <h3 className='mt-2 font-semibold text-title'>
                 Laravel e seu ecossistema v1.0
               </h3>
-              <span class='text-body'>Laraconf Brasil 2017</span>
+              <span className='text-body'>Laraconf Brasil 2017</span>
             </div>
 
             <div className='w-1/2 mx-4 text-center'>
@@ -86,7 +80,7 @@ function Community() {
                 target='_blank'
                 className='relative flex items-center justify-center overflow-hidden rounded-lg'
               >
-                <div class='absolute inset-0 bg-main opacity-75'></div>
+                <div className='absolute inset-0 opacity-75 bg-main'></div>
 
                 <img
                   src='https://img.youtube.com/vi/ZV5IcfT15GI/sddefault.jpg'
@@ -95,15 +89,15 @@ function Community() {
                 />
 
                 <svg
-                  class='w-12 h-12 absolute text-light'
+                  className='absolute w-12 h-12 text-light'
                   fill='currentColor'
                   viewBox='0 0 20 20'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                   ></path>
                 </svg>
               </a>
@@ -111,7 +105,7 @@ function Community() {
               <h3 className='mt-2 font-semibold text-title'>
                 Laravel e seu ecossistema v2.0
               </h3>
-              <span class='text-body'>PHP Communit summit 2019</span>
+              <span className='text-body'>PHP Communit summit 2019</span>
             </div>
           </div>
         </div>

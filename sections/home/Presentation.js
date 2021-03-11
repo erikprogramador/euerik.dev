@@ -7,12 +7,6 @@ function Presentation() {
       className='relative flex items-center justify-center min-h-screen py-16'
       id='apresentacao'
     >
-      <img
-        src='/static/logo.svg'
-        alt='Logo EuErik.dev'
-        className='absolute w-12 mb-10 top-4 left-4'
-      />
-
       <div className='container px-6 mx-auto sm:px-0'>
         <div className='flex flex-col items-center gap-20 md:grid md:grid-cols-2'>
           <div className='order-1 md:order-0'>
@@ -48,7 +42,7 @@ function Presentation() {
             <img
               src='/static/eu.png'
               alt='Arte com uma foto do Erik no centro e icones de uma câmera, html5, logo do excel, negociação'
-              classNmae='w-full'
+              className='w-full'
             />
           </div>
         </div>
