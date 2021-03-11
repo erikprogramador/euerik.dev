@@ -39,8 +39,8 @@ function Community() {
             </p>
           </div>
 
-          <div className='flex -mx-4'>
-            <div className='w-1/2 mx-4 text-center'>
+          <div className='flex flex-col -mx-4 sm:flex-row'>
+            <div className='w-full mb-4 text-center sm:w-1/2 sm:mx-4'>
               <a
                 href='https://www.youtube.com/watch?v=5bvwsA1lVmo'
                 target='_blank'
@@ -74,7 +74,7 @@ function Community() {
               <span className='text-body'>Laraconf Brasil 2017</span>
             </div>
 
-            <div className='w-1/2 mx-4 text-center'>
+            <div className='w-full mb-4 text-center sm:w-1/2 sm:mx-4'>
               <a
                 href='https://www.youtube.com/watch?v=ZV5IcfT15GI'
                 target='_blank'
