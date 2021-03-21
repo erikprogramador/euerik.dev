@@ -3,7 +3,7 @@ import React from 'react'
 function BaseButton(props) {
   return (
     <button
-      className='px-10 py-3 font-semibold rounded-lg outline-none bg-main text-light focus:outline-none'
+      className='px-10 py-3 font-semibold outline-none rounded-xl bg-main text-light focus:outline-none'
       {...props}
     >
       {props.children}

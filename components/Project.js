@@ -5,7 +5,7 @@ function Project({ project }) {
   return (
     <NextLink href={`/projetos/${project.metadata.slug}`}>
       <a
-        className={`flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 text-light ${project.metadata.color}`}
+        className={`flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 text-light rounded-xl shadow-lg ${project.metadata.color}`}
       >
         <div className='mb-3'>
           <img

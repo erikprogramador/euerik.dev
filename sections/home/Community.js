@@ -44,7 +44,7 @@ function Community() {
               <a
                 href='https://www.youtube.com/watch?v=5bvwsA1lVmo'
                 target='_blank'
-                className='relative flex items-center justify-center overflow-hidden rounded-lg'
+                className='relative flex items-center justify-center overflow-hidden rounded-xl'
               >
                 <div className='absolute inset-0 opacity-75 bg-main'></div>
 
@@ -78,7 +78,7 @@ function Community() {
               <a
                 href='https://www.youtube.com/watch?v=ZV5IcfT15GI'
                 target='_blank'
-                className='relative flex items-center justify-center overflow-hidden rounded-lg'
+                className='relative flex items-center justify-center overflow-hidden rounded-xl'
               >
                 <div className='absolute inset-0 opacity-75 bg-main'></div>
 

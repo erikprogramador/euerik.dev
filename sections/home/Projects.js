@@ -25,7 +25,7 @@ function Projects({ projects }) {
           </div>
         </div>
 
-        <div className='grid grid-cols-1 overflow-hidden rounded-lg shadow-2xl sm:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-4 overflow-hidden sm:grid-cols-2'>
           {projects &&
             projects.map(project => (
               <Project project={project} key={project.metadata.slug} />
