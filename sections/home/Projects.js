@@ -28,7 +28,7 @@ function Projects({ projects }) {
         <div className='grid grid-cols-1 gap-4 overflow-hidden sm:grid-cols-2'>
           {projects &&
             projects.map(project => (
-              <Project project={project} key={project.metadata.slug} />
+              <Project project={project} key={project.slug} />
             ))}
         </div>
       </div>

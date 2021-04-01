@@ -31,7 +31,18 @@ export async function getStaticProps() {
 
   return {
     props: {
-      projects,
+      projects: mapProjects(projects),
     },
   }
+}
+
+function mapProjects(projects) {
+  return projects.map(({ metadata }) => {
+    return {
+      title: metadata.title,
+      slug: metadata.slug,
+      logo: metadata.logo,
+      color: metadata.color,
+    }
+  })
 }

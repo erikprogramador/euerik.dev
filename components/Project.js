@@ -3,19 +3,19 @@ import NextLink from 'next/link'
 
 function Project({ project }) {
   return (
-    <NextLink href={`/projetos/${project.metadata.slug}`}>
+    <NextLink href={`/projetos/${project.slug}`}>
       <a
-        className={`flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 text-light rounded-xl shadow-lg ${project.metadata.color}`}
+        className={`flex flex-col items-center justify-center h-48 p-10 text-center sm:h-64 text-light rounded-xl shadow-lg ${project.color}`}
       >
         <div className='mb-3'>
           <img
-            src={project.metadata.logo}
-            alt={`Logo ${project.metadata.title}`}
+            src={project.logo}
+            alt={`Logo ${project.title}`}
             className='w-16'
           />
         </div>
 
-        <h3 className='text-xl font-semibold'>{project.metadata.title}</h3>
+        <h3 className='text-xl font-semibold'>{project.title}</h3>
       </a>
     </NextLink>
   )
