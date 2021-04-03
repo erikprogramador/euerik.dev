@@ -1,4 +1,3 @@
-import React from 'react'
 import GoToButton from '../../components/GoToButton'
 import Project from '../../components/Project'
 

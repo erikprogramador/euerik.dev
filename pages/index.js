@@ -4,6 +4,7 @@ import Community from '../sections/home/Community'
 import Presentation from '../sections/home/Presentation'
 import { getProjects } from '../lib/projects'
 import DefaultLayout from '../components/DefaultLayout'
+import ContentCreated from '../sections/home/ContentCreated'
 
 export default function Home({ projects }) {
   return (
@@ -21,6 +22,7 @@ export default function Home({ projects }) {
         <Presentation />
         <Projects projects={projects} />
         <Community />
+        <ContentCreated />
       </div>
     </DefaultLayout>
   )

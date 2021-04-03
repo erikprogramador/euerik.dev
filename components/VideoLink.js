@@ -1,5 +1,3 @@
-import React from 'react'
-
 function VideoLink({ link, title, cover, event }) {
   return (
     <a

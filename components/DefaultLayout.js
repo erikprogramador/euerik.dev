@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import Head from 'next/head'
 
 function DefaultLayout({ children, title, description }) {

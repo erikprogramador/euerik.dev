@@ -18,6 +18,8 @@ module.exports = {
         simulaimob: '#C4CAEB',
         simulaplano: '#FF1617',
         salescity: '#1A1A1A',
+        linkedin: '#0077b5',
+        youtube: '#ff0000',
       },
     },
     fontFamily: {

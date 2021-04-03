@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import BaseButton from './BaseButton'
 
 function GoToButton({ children, go }) {

@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectLayout from '../../components/ProjectLayout'
 import { getProjectBySlug, getProjects } from '../../lib/projects'
 

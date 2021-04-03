@@ -1,5 +1,5 @@
-import React from 'react'
 import VideoLink from '../../components/VideoLink'
+import GoToButton from '../../components/GoToButton'
 
 function Community() {
   return (
@@ -37,6 +37,8 @@ function Community() {
               Além disso palestro em eventos para compartilhar o conhecimento.
               <strong>Veja minhas palestras no youtube!</strong>
             </p>
+
+            <GoToButton go='conteudo'>Meu conteúdo!</GoToButton>
           </div>
 
           <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
