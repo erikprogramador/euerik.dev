@@ -1,5 +1,5 @@
 import React from 'react'
-import GoToButton from '../../components/GoToButton'
+import VideoLink from '../../components/VideoLink'
 
 function Community() {
   return (
@@ -39,74 +39,19 @@ function Community() {
             </p>
           </div>
 
-          <div className='flex flex-col -mx-4 sm:flex-row'>
-            <div className='w-full mb-4 text-center sm:w-1/2 sm:mx-4'>
-              <a
-                href='https://www.youtube.com/watch?v=5bvwsA1lVmo'
-                target='_blank'
-                className='relative flex items-center justify-center overflow-hidden rounded-xl'
-              >
-                <div className='absolute inset-0 opacity-75 bg-main'></div>
-
-                <img
-                  src='https://img.youtube.com/vi/5bvwsA1lVmo/sddefault.jpg'
-                  alt='Link da palestra Laravel e seu ecossistema v1.0'
-                  className='object-cover w-full h-48'
-                />
-
-                <svg
-                  className='absolute w-12 h-12 text-light'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
-                    clipRule='evenodd'
-                  ></path>
-                </svg>
-              </a>
-
-              <h3 className='mt-2 font-semibold text-title'>
-                Laravel e seu ecossistema v1.0
-              </h3>
-              <span className='text-body'>Laraconf Brasil 2017</span>
-            </div>
-
-            <div className='w-full mb-4 text-center sm:w-1/2 sm:mx-4'>
-              <a
-                href='https://www.youtube.com/watch?v=ZV5IcfT15GI'
-                target='_blank'
-                className='relative flex items-center justify-center overflow-hidden rounded-xl'
-              >
-                <div className='absolute inset-0 opacity-75 bg-main'></div>
-
-                <img
-                  src='https://img.youtube.com/vi/ZV5IcfT15GI/sddefault.jpg'
-                  alt='Link da palestra Laravel e seu ecossistema v2.0'
-                  className='object-cover w-full h-48'
-                />
-
-                <svg
-                  className='absolute w-12 h-12 text-light'
-                  fill='currentColor'
-                  viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <path
-                    fillRule='evenodd'
-                    d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
-                    clipRule='evenodd'
-                  ></path>
-                </svg>
-              </a>
-
-              <h3 className='mt-2 font-semibold text-title'>
-                Laravel e seu ecossistema v2.0
-              </h3>
-              <span className='text-body'>PHP Communit summit 2019</span>
-            </div>
+          <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+            <VideoLink
+              link='https://www.youtube.com/watch?v=5bvwsA1lVmo'
+              title='Laravel e seu ecossistema v1.0'
+              event='Laraconf Brasil 2017'
+              cover='https://img.youtube.com/vi/5bvwsA1lVmo/sddefault.jpg'
+            />
+            <VideoLink
+              link='https://www.youtube.com/watch?v=ZV5IcfT15GI'
+              title='Laravel e seu ecossistema v2.0'
+              event='PHP Communit summit 2019'
+              cover='https://img.youtube.com/vi/ZV5IcfT15GI/sddefault.jpg'
+            />
           </div>
         </div>
       </div>
