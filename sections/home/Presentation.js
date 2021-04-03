@@ -42,6 +42,9 @@ function Presentation() {
               src='/static/eu.jpg'
               alt='Arte com uma foto do Erik no centro e icones de uma câmera, html5, logo do excel, negociação'
               className='object-cover w-full shadow-xl rounded-xl'
+              width='728'
+              height='430'
+              loading='lazy'
             />
 
             <ul className='grid grid-cols-1 gap-6 mt-6 md:grid-cols-3'>
@@ -54,15 +57,15 @@ function Presentation() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
                   ></path>
                 </svg>
-                <h4 className='mt-2 text-lg font-semibold text-white'>
+                <h3 className='mt-2 text-lg font-semibold text-white'>
                   Desenvolvedor
-                </h4>
+                </h3>
               </li>
               <li className='flex flex-col items-center justify-center h-40 text-white shadow-xl bg-main rounded-xl text-light'>
                 <svg
@@ -73,15 +76,15 @@ function Presentation() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01'
                   ></path>
                 </svg>
-                <h4 className='mt-2 text-lg font-semibold text-white'>
+                <h3 className='mt-2 text-lg font-semibold text-white'>
                   Designer
-                </h4>
+                </h3>
               </li>
               <li className='flex flex-col items-center justify-center h-40 text-white shadow-xl bg-main rounded-xl text-light'>
                 <svg
@@ -92,15 +95,15 @@ function Presentation() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
                     d='M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z'
                   ></path>
                 </svg>
-                <h4 className='mt-2 text-lg font-semibold text-white'>
+                <h3 className='mt-2 text-lg font-semibold text-white'>
                   Empreendedor
-                </h4>
+                </h3>
               </li>
             </ul>
           </div>

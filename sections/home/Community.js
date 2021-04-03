@@ -26,6 +26,7 @@ function Community() {
                 href='https://phpsp.org.br/'
                 target='_blank'
                 className='font-semibold text-main'
+                rel='noreferrer'
               >
                 PHPSP
               </a>

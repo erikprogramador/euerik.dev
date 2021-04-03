@@ -22,9 +22,6 @@ module.exports = {
         youtube: '#ff0000',
       },
     },
-    fontFamily: {
-      sans: ['Poppins', 'Helvetica', 'Arial', 'sans-serif'],
-    },
   },
   variants: {
     extend: {},

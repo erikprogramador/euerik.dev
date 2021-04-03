@@ -1,8 +1,15 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+// import { Html } from 'next/document'
 
 function DefaultLayout({ children, title, description }) {
+  useEffect(() => {
+    document.documentElement.lang = 'pt-BR'
+  })
+
   return (
     <>
+      {/* <Html lang='pt-BR'> */}
       <Head>
         <link
           rel='shortcut icon'
@@ -13,12 +20,6 @@ function DefaultLayout({ children, title, description }) {
         <title>{title}</title>
 
         <meta name='description' content={description} />
-
-        <link rel='preconnect' href='https://fonts.gstatic.com' />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'
-          rel='stylesheet'
-        />
 
         {/* Twitter */}
         <meta name='twitter:card' content='summary' key='twcard' />
@@ -37,6 +38,7 @@ function DefaultLayout({ children, title, description }) {
       </Head>
 
       {children}
+      {/* </Html> */}
     </>
   )
 }

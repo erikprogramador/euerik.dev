@@ -4,6 +4,7 @@ function VideoLink({ link, title, cover, event }) {
       href={link}
       target='_blank'
       className='relative flex items-center justify-center overflow-hidden rounded-xl'
+      rel='noreferrer'
     >
       <div className='absolute inset-0 opacity-60 bg-main'></div>
 
@@ -11,6 +12,9 @@ function VideoLink({ link, title, cover, event }) {
         src={cover}
         alt={`Link da palestra ${title}`}
         className='object-cover w-full h-48'
+        width='640'
+        height='192'
+        loading='lazy'
       />
 
       <div className='absolute flex items-center text-light'>
