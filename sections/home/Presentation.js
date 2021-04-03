@@ -42,7 +42,7 @@ function Presentation() {
             <img
               src='/static/eu.jpg'
               alt='Arte com uma foto do Erik no centro e icones de uma câmera, html5, logo do excel, negociação'
-              className='w-full shadow-xl rounded-xl'
+              className='object-cover w-full shadow-xl rounded-xl'
             />
 
             <ul className='grid grid-cols-1 gap-6 mt-6 md:grid-cols-3'>
