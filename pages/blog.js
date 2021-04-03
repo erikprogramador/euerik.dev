@@ -7,20 +7,20 @@ export default function Home() {
       title='Blog - EuErik.dev'
       description='Desenvolvedor por paixão, Designer por curiosidade, Empreendedor por natureza'
     >
-      <div class='container mx-auto'>
+      <div className='container mx-auto'>
         <header className='flex items-center justify-between py-6'>
-          <div class='flex items-center'>
+          <div className='flex items-center'>
             <img
               src='/static/logo.svg'
               alt='Logo EuErik.dev'
               className='w-12 mr-4'
             />
-            <h1 class='text-2xl font-semibold text-title mt-6'>
-              EuErik.dev meu Blog
+            <h1 className='text-2xl font-semibold text-title mt-6'>
+              <span className='text-main'>EuErik.dev</span> meu Blog
             </h1>
           </div>
 
-          <nav class='flex items-center space-x-6'>
+          <nav className='flex items-center space-x-6'>
             <NextLink href='/'>
               <a className='font-semibold text-title'>Home</a>
             </NextLink>
