@@ -17,4 +17,6 @@ Para nós, tudo é uma questão de como gerar o máximo de valor para o cliente,
 
 Encaramos o marketing mais como ciência e processo. Quanto mais dados temos, mais criativos somos.
 
+![Adalov.com](/static/projetos/adalov.png "Adalov.com")
+
 <a href="https://adalov.com?utm_source=euerikdev" target='_blank'>Conheça mais sobre a Adalov</a>
