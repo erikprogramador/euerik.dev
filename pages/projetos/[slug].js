@@ -9,7 +9,7 @@ function Projeto({ project }) {
       banner={project.metadata.banner}
     >
       <div
-        className='mx-auto prose prose-xl prose-main'
+        className='px-4 mx-auto prose prose-xl prose-main'
         dangerouslySetInnerHTML={{ __html: project.content }}
       ></div>
     </ProjectLayout>
