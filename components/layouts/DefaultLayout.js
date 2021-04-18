@@ -1,12 +1,6 @@
 import Head from 'next/head'
-import { useEffect } from 'react'
-// import { Html } from 'next/document'
 
 function DefaultLayout({ children, title, description }) {
-  useEffect(() => {
-    document.documentElement.lang = 'pt-BR'
-  })
-
   return (
     <>
       {/* <Html lang='pt-BR'> */}
