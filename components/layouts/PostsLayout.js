@@ -3,10 +3,7 @@ import DefaultLayout from './DefaultLayout'
 
 function ProjectLayout({ children, title, description, banner }) {
   return (
-    <DefaultLayout
-      title={`Projeto ${title} | EuErik.dev`}
-      description={description}
-    >
+    <DefaultLayout title={`${title} | EuErik.dev`} description={description}>
       <div
         className='relative px-4 bg-center bg-no-repeat bg-cover bg-main text-light'
         style={{ backgroundImage: `url(${banner})` }}

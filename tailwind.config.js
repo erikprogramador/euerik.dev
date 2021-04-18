@@ -4,6 +4,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './sections/**/*.{js,ts,jsx,tsx}',
     './_projects/**/*.{md,mdx}',
+    './_posts/**/*.{md,mdx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
