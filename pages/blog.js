@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import DefaultLayout from '../components/DefaultLayout'
+import DefaultLayout from '../components/layouts/DefaultLayout'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
               alt='Logo EuErik.dev'
               className='w-12 mr-4'
             />
-            <h1 className='text-2xl font-semibold text-title mt-6'>
+            <h1 className='mt-6 text-2xl font-semibold text-title'>
               <span className='text-main'>EuErik.dev</span> meu Blog
             </h1>
           </div>
