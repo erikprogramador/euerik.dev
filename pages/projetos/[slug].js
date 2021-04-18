@@ -1,4 +1,4 @@
-import ProjectLayout from '../../components/ProjectLayout'
+import ProjectLayout from '../../components/layouts/ProjectLayout'
 import { getProjectBySlug, getProjects } from '../../lib/projects'
 
 function Projeto({ project }) {
@@ -8,7 +8,10 @@ function Projeto({ project }) {
       description={project.metadata.description}
       banner={project.metadata.banner}
     >
-      <h1>{project.metadata.title}</h1>
+      <div
+        className='mx-auto prose prose-xl prose-main'
+        dangerouslySetInnerHTML={{ __html: project.content }}
+      ></div>
     </ProjectLayout>
   )
 }
