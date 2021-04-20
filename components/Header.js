@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 function Header() {
   return (
     <header className='absolute inset-x-0 top-0 z-30'>
-      <div className='flex items-baseline justify-between max-w-3xl py-4 mx-auto space-x-6'>
+      <div className='flex items-baseline justify-between max-w-3xl px-8 py-4 mx-auto space-x-6'>
         <NextLink href='/'>
           <a>
             <img

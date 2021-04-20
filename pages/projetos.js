@@ -14,12 +14,12 @@ function Projetos({ projects }) {
 
       <div style={{ height: '80px' }}></div>
 
-      <div className='max-w-3xl py-10 mx-auto'>
+      <div className='max-w-3xl px-8 py-10 mx-auto'>
         <h1 className='mb-2 text-4xl font-semibold'>Meus projetos!</h1>
         <p>Aqui tem uma lista com alguns dos meus projetos favoritos</p>
       </div>
 
-      <div className='max-w-3xl pb-12 mx-auto'>
+      <div className='max-w-3xl px-8 pb-12 mx-auto'>
         <ul className='grid gap-6 md:grid-cols-2'>
           {projects.map(project => (
             <Project key={project.slug} project={project} />

@@ -1,5 +1,6 @@
 import DefaultLayout from '@layouts/DefaultLayout'
 import Header from '@components/Header'
+import BreadCrumbs from '@components/BreadCrumbs'
 
 function ProjectLayout({ children, title, description, banner }) {
   return (
@@ -10,10 +11,15 @@ function ProjectLayout({ children, title, description, banner }) {
       >
         <div className='absolute inset-0 opacity-75 bg-dark'></div>
         <Header />
-        <div className='relative flex flex-col justify-center max-w-3xl mx-auto h-96'>
+
+        <div className='relative flex flex-col justify-center max-w-3xl px-8 mx-auto h-96'>
           <h1 className='mb-2 text-5xl font-semibold'>{title}</h1>
           <p className='text-lg'>{description}</p>
         </div>
+      </div>
+
+      <div className='max-w-3xl px-8 py-4 mx-auto'>
+        <BreadCrumbs />
       </div>
 
       <div className='container pt-10 pb-20 mx-auto'>{children}</div>
