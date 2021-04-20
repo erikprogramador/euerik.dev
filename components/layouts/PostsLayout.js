@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import DefaultLayout from './DefaultLayout'
+import DefaultLayout from '@layouts/DefaultLayout'
 
 function ProjectLayout({ children, title, description, banner }) {
   return (

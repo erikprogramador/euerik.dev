@@ -1,4 +1,4 @@
-import BaseButton from './BaseButton'
+import BaseButton from '@components/BaseButton'
 
 function GoToButton({ children, go }) {
   function handleGoToClick(evt) {

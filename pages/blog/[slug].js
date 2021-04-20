@@ -1,5 +1,5 @@
-import PostsLayout from '../../components/layouts/PostsLayout'
-import { getPostBySlug, getPosts } from '../../lib/posts'
+import PostsLayout from '@components/layouts/PostsLayout'
+import { getPostBySlug, getPosts } from '@lib/posts'
 
 function Blog({ post }) {
   return (

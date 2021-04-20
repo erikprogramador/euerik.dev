@@ -1,5 +1,5 @@
-import VideoLink from '../../components/VideoLink'
-import GoToButton from '../../components/GoToButton'
+import VideoLink from '@components/VideoLink'
+import GoToButton from '@components/GoToButton'
 
 function Community() {
   return (

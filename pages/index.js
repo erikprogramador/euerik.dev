@@ -1,10 +1,10 @@
-import Hero from '../sections/home/Hero'
-import Projects from '../sections/home/Projects'
-import Community from '../sections/home/Community'
-import Presentation from '../sections/home/Presentation'
-import { getProjects } from '../lib/projects'
-import DefaultLayout from '../components/layouts/DefaultLayout'
-import ContentCreated from '../sections/home/ContentCreated'
+import Hero from '@sections/home/Hero'
+import Projects from '@sections/home/Projects'
+import Community from '@sections/home/Community'
+import Presentation from '@sections/home/Presentation'
+import { getProjects } from '@lib/projects'
+import DefaultLayout from '@layouts/DefaultLayout'
+import ContentCreated from '@sections/home/ContentCreated'
 
 export default function Home({ projects }) {
   return (

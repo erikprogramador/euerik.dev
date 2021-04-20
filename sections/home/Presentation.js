@@ -1,4 +1,4 @@
-import GoToButton from '../../components/GoToButton'
+import GoToButton from '@components/GoToButton'
 
 function Presentation() {
   return (

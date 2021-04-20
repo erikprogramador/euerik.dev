@@ -1,5 +1,5 @@
-import GoToButton from '../../components/GoToButton'
-import Project from '../../components/Project'
+import GoToButton from '@components/GoToButton'
+import Project from '@components/Project'
 
 function Projects({ projects }) {
   return (

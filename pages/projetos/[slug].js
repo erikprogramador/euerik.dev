@@ -1,5 +1,5 @@
-import PostsLayout from '../../components/layouts/PostsLayout'
-import { getProjectBySlug, getProjects } from '../../lib/projects'
+import PostsLayout from '@components/layouts/PostsLayout'
+import { getProjectBySlug, getProjects } from '@lib/projects'
 
 function Projeto({ project }) {
   return (

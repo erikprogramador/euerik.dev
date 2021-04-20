@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import DefaultLayout from '../components/layouts/DefaultLayout'
+import DefaultLayout from '@components/layouts/DefaultLayout'
 
 export default function Home() {
   return (
