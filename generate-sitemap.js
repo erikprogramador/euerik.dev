@@ -17,17 +17,20 @@ async function generateSiteMap() {
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           ${pages
             .map(page => {
-              const path = page
+              const path = `/${page}`
                 .replace('pages', '')
                 .replace('.js', '')
                 .replace('.md', '')
-              const route = path === '/index' ? '' : path
-              const url = `${process.env.BASE_DOMAIN}/${route}`
+                .replace('/index', '')
                 .replace('//', '/')
                 .replace('//blog', '/blog')
+                .replace('//projetos', '/blog')
                 .replace('_projects', 'projetos')
                 .replace('_posts', 'blog')
-                .replace(':/', '://')
+              return path.replace('/', '')
+            })
+            .map(path => {
+              const url = `${process.env.BASE_DOMAIN}/${path}`
               return `
                       <url>
                           <loc>${url}</loc>
