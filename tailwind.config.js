@@ -14,6 +14,7 @@ module.exports = {
       main: '#4025E8',
       title: '#080520',
       body: '#272536',
+      muted: '#bbbbbb',
       branding: {
         adalov: '#000000',
         simulaimob: '#C4CAEB',

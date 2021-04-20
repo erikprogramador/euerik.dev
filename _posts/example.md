@@ -1,9 +1,10 @@
 ---
 title: 'Post exemplo'
-slug: 'Post de exemplo'
+slug: 'post-exemplo'
 description: 'Excerpt post exemplo'
 banner: '/static/banners/adalov.jpg'
 tags: 'one,two,three'
+published_at: '20/04/2021'
 ---
 
-## Adalov
+## Primeiro post de exemplo

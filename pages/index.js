@@ -6,7 +6,7 @@ import { getProjects } from '@lib/projects'
 import DefaultLayout from '@layouts/DefaultLayout'
 import ContentCreated from '@sections/home/ContentCreated'
 
-export default function Home({ projects }) {
+function Home({ projects }) {
   return (
     <DefaultLayout
       title='Erik Vanderlei Fernandes - EuErik.dev'
@@ -48,3 +48,5 @@ function mapProjects(projects) {
     }
   })
 }
+
+export default Home
