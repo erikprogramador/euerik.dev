@@ -1,5 +1,6 @@
 const fs = require('fs')
 const globby = require('globby')
+const prettier = require('prettier')
 
 async function generateSiteMap() {
   const pages = await globby([
@@ -13,7 +14,6 @@ async function generateSiteMap() {
   ])
 
   const sitemap = `
-      <?xml version="1.0" encoding="UTF-8"?>
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
           ${pages
             .map(page => {
@@ -22,9 +22,15 @@ async function generateSiteMap() {
                 .replace('.js', '')
                 .replace('.md', '')
               const route = path === '/index' ? '' : path
+              const url = `${process.env.BASE_DOMAIN}/${route}`
+                .replace('//', '/')
+                .replace('//blog', '/blog')
+                .replace('_projects', 'projetos')
+                .replace('_posts', 'blog')
+                .replace(':/', '://')
               return `
                       <url>
-                          <loc>${`${process.env.BASE_DOMAIN}/${route}`}</loc>
+                          <loc>${url}</loc>
                       </url>
                   `
             })
@@ -32,7 +38,11 @@ async function generateSiteMap() {
       </urlset>
   `
 
-  fs.writeFileSync('public/sitemap.xml', sitemap)
+  const formatedSitemap = prettier.format(sitemap, {
+    plugins: [require('@prettier/plugin-xml')],
+  })
+
+  fs.writeFileSync('public/sitemap.xml', formatedSitemap)
 }
 
 generateSiteMap()
