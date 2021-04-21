@@ -45,7 +45,7 @@ async function generateSiteMap() {
     plugins: [require('@prettier/plugin-xml')],
   })
 
-  fs.writeFileSync('public/sitemap.xml', formatedSitemap)
+  fs.writeFileSync('public/sitemap.xml', formatedSitemap.replace(';', ''))
 }
 
 generateSiteMap()
