@@ -4,7 +4,6 @@ import Head from 'next/head'
 function DefaultLayout({ children, title, description }) {
   return (
     <>
-      {/* <Html lang='pt-BR'> */}
       <Head>
         <link
           rel='shortcut icon'
@@ -35,7 +34,6 @@ function DefaultLayout({ children, title, description }) {
       <Header />
 
       {children}
-      {/* </Html> */}
     </>
   )
 }
