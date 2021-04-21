@@ -13,12 +13,8 @@ function Home({ projects }) {
       description='Desenvolvedor por paixão, Designer por curiosidade, Empreendedor por natureza'
     >
       <Hero />
-      <div className='relative' id='base-offset'>
-        <img
-          src='/static/logo.svg'
-          alt='Logo EuErik.dev'
-          className='sticky w-12 mb-10 top-4 left-4'
-        />
+
+      <div id='base-offset'>
         <Presentation />
         <Projects projects={projects} />
         <Community />

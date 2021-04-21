@@ -1,9 +1,20 @@
 import NextLink from 'next/link'
+import { useEffect, useState } from 'react'
 
 function Header() {
+  const [currentPath, setCurrentPath] = useState('/')
+
+  useEffect(() => {
+    const pathToCheck = window.location.pathname
+      .split('/')
+      .filter(path => path != '')
+      .shift()
+    setCurrentPath('/' + (pathToCheck ? pathToCheck : ''))
+  }, [])
+
   return (
     <header className='absolute inset-x-0 top-0 z-30'>
-      <div className='flex items-baseline justify-between max-w-3xl px-8 py-4 mx-auto space-x-6'>
+      <div className='container flex items-baseline justify-between py-4 mx-auto space-x-6'>
         <NextLink href='/'>
           <a>
             <img
@@ -16,13 +27,29 @@ function Header() {
 
         <nav className='flex items-center space-x-6 opacity-80'>
           <NextLink href='/'>
-            <a className='text-lg'>Página inicial</a>
+            <a
+              className={currentPath === '/' ? 'text-main text-lg' : 'text-lg'}
+            >
+              Página inicial
+            </a>
           </NextLink>
           <NextLink href='/blog'>
-            <a className='text-lg'>Blog</a>
+            <a
+              className={
+                currentPath === '/blog' ? 'text-main text-lg' : 'text-lg'
+              }
+            >
+              Blog
+            </a>
           </NextLink>
           <NextLink href='/projetos'>
-            <a className='text-lg'>Projetos</a>
+            <a
+              className={
+                currentPath === '/projetos' ? 'text-main text-lg' : 'text-lg'
+              }
+            >
+              Projetos
+            </a>
           </NextLink>
           <a
             href='https://www.youtube.com/channel/UCmnImNyVL1wwb4f7MpG8VIg'

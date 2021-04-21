@@ -1,3 +1,4 @@
+import Header from '@components/Header'
 import Head from 'next/head'
 
 function DefaultLayout({ children, title, description }) {
@@ -30,6 +31,8 @@ function DefaultLayout({ children, title, description }) {
         <meta property='og:title' content={title} key='ogtitle' />
         <meta property='og:description' content={description} key='ogdesc' />
       </Head>
+
+      <Header />
 
       {children}
       {/* </Html> */}
