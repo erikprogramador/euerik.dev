@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 function BreadCrumbs() {
   const [paths, setPaths] = useState([])
 
@@ -32,8 +32,8 @@ function BreadCrumbs() {
   return (
     <ul className='flex items-center space-x-4'>
       {paths.map(({ title, path }, index) => (
-        <>
-          <li key={path}>
+        <React.Fragment key={path}>
+          <li>
             <NextLink href={path}>
               <a
                 className={
@@ -47,7 +47,7 @@ function BreadCrumbs() {
             </NextLink>
           </li>
           {isLastIndex(paths, index) && <li className='text-muted'>/</li>}
-        </>
+        </React.Fragment>
       ))}
     </ul>
   )
