@@ -57,6 +57,7 @@ function Header() {
             rel='noopener'
             className='text-lg text-branding-youtube'
             alt='Youtube'
+            aria-label='Youtube'
           >
             <svg className='w-8 h-8' viewBox='0 0 24 24'>
               <path
@@ -71,6 +72,7 @@ function Header() {
             rel='noopener'
             className='text-lg text-branding-linkedin'
             alt='LinkedIn'
+            aria-label='LinkedIn'
           >
             <svg className='w-8 h-8' viewBox='0 0 24 24'>
               <path
