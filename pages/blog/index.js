@@ -13,7 +13,7 @@ function Blog({ posts }) {
 
       <div style={{ height: '80px' }}></div>
 
-      <div className='max-w-3xl py-10 mx-auto'>
+      <div className='container py-10 mx-auto'>
         <h1 className='mb-2 text-4xl font-semibold'>Blog</h1>
         <p>
           Conteúdo objetivo e rápido para te ajudar nos problemas especificos de
@@ -21,30 +21,29 @@ function Blog({ posts }) {
         </p>
       </div>
 
-      <div className='max-w-3xl pb-12 mx-auto'>
-        <ul className='space-y-10'>
+      <div className='container pb-12 mx-auto'>
+        <ul className='grid grid-cols-1 gap-10 space-y-10 md:grid-cols-3'>
           {posts.map(post => (
             <li key={post.slug}>
               <NextLink href={`/blog/${post.slug}`}>
-                <a className='block p-4 border rounded-md border-muted hover:border-main'>
-                  <h2 className='text-3xl font-semibold text-title'>
-                    {post.title}
-                  </h2>
-                  <span className='text-xs text-muted'>
-                    Publicado em {post.published_at}
-                  </span>
-                  <p className='mt-2 mb-4 text-body'>{post.excerpt}</p>
+                <a className='relative block'>
+                  <img
+                    src={post.cover}
+                    alt={post.title}
+                    className='object-cover w-full rounded-md h-72'
+                  />
 
-                  <ul className='flex items-center space-x-3'>
-                    {post.tags.map(tag => (
-                      <li
-                        className='px-3 text-xs rounded-full bg-main text-light'
-                        key={tag}
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className='absolute inset-0 flex flex-col justify-end p-6 rounded-lg bg-opacity-60 bg-dark'>
+                    <h2 className='mb-1 text-2xl font-semibold text-light'>
+                      {post.title}
+                    </h2>
+
+                    <span className='text-xs text-muted'>
+                      Publicado em {post.published_at}
+                    </span>
+
+                    <p className='mt-2 text-light'>{post.excerpt}</p>
+                  </div>
                 </a>
               </NextLink>
             </li>
@@ -71,8 +70,8 @@ function mapPosts(posts) {
       title: metadata.title,
       slug: metadata.slug,
       excerpt: metadata.description,
+      cover: metadata.cover,
       published_at: metadata.published_at,
-      tags: metadata.tags.split(',').map(tag => tag.trim()),
     }
   })
 }
