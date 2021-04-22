@@ -40,7 +40,7 @@ function ContentCreated() {
                 href='https://www.linkedin.com/in/erik-vanderlei-fernandes-a88790b3/'
                 target='_blank'
                 className='flex flex-col items-center justify-center h-40 text-white shadow-xl bg-branding-linkedin rounded-xl text-light'
-                rel='noreferrer'
+                rel='noopener'
               >
                 <svg className='w-12 h-12 fill-current' viewBox='0 0 24 24'>
                   <path
@@ -56,7 +56,7 @@ function ContentCreated() {
                 href='https://www.youtube.com/channel/UCmnImNyVL1wwb4f7MpG8VIg'
                 target='_blank'
                 className='flex flex-col items-center justify-center h-40 text-white shadow-xl bg-branding-youtube rounded-xl text-light'
-                rel='noreferrer'
+                rel='noopener'
               >
                 <svg className='w-12 h-12' viewBox='0 0 24 24'>
                   <path

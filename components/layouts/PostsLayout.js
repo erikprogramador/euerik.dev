@@ -10,7 +10,6 @@ function ProjectLayout({ children, title, description, banner }) {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className='absolute inset-0 opacity-75 bg-dark'></div>
-        <Header />
 
         <div className='relative flex flex-col justify-center max-w-3xl px-8 mx-auto h-96'>
           <h1 className='mb-2 text-5xl font-semibold'>{title}</h1>
