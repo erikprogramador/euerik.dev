@@ -23,6 +23,7 @@ module.exports = {
         linkedin: '#0077b5',
         youtube: '#ff0000',
       },
+      transparent: 'transparent',
     },
   },
   variants: {
