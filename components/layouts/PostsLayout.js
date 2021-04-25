@@ -11,7 +11,7 @@ function ProjectLayout({ children, title, description, banner }) {
         <h1 className='text-2xl font-semibold text-title'>{title}</h1>
         <time className='text-xs text-muted'>20/04/2021</time>
 
-        <div className='mt-4 mb-1'>
+        <div className='mt-1 mb-2'>
           <BreadCrumbs />
         </div>
 
