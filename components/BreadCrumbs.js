@@ -30,7 +30,7 @@ function BreadCrumbs() {
   }
 
   return (
-    <ul className='flex items-center space-x-4'>
+    <ul className='flex items-center space-x-2'>
       {paths.map(({ title, path }, index) => (
         <React.Fragment key={path}>
           <li>
@@ -38,15 +38,17 @@ function BreadCrumbs() {
               <a
                 className={
                   isLastIndex(paths, index)
-                    ? 'capitalize text-body'
-                    : 'capitalize text-main'
+                    ? 'capitalize text-xs text-body'
+                    : 'capitalize text-xs text-main'
                 }
               >
                 {title}
               </a>
             </NextLink>
           </li>
-          {isLastIndex(paths, index) && <li className='text-muted'>/</li>}
+          {isLastIndex(paths, index) && (
+            <li className='text-xs text-muted'>/</li>
+          )}
         </React.Fragment>
       ))}
     </ul>

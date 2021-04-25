@@ -7,8 +7,6 @@ banner: '/static/banners/adalov.jpg'
 color: 'bg-branding-adalov'
 ---
 
-## Adalov
-
 A “agência” de marketing de resultados.
 
 Agência entre aspas mesmo, porque nascemos com uma paixão maior que o normal em resolver problemas. Tecnologia e dados estão no nosso DNA.

@@ -11,7 +11,7 @@ function VideoLink({ link, title, cover, event }) {
       <img
         src={cover}
         alt={`Link da palestra ${title}`}
-        className='object-cover w-full h-48'
+        className='object-cover w-full h-52'
         width='640'
         height='192'
         loading='lazy'

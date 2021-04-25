@@ -7,8 +7,6 @@ banner: '/static/banners/simulaimob.png'
 color: 'bg-branding-simulaimob'
 ---
 
-## Simulaimob
-
 Chatbot de simulação de financiamento imobiliário. Onde as empresas imobiliárias poderiam anunciar seus empreendimentos e assim conseguiriamos conectar os possíveis clientes com as imobiliárias.
 
 ![Print do chat do SimulaImob](/static/projetos/simulaimob.png "Print do chat do SimulaImob")

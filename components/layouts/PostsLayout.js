@@ -5,23 +5,24 @@ import BreadCrumbs from '@components/BreadCrumbs'
 function ProjectLayout({ children, title, description, banner }) {
   return (
     <DefaultLayout title={`${title} | EuErik.dev`} description={description}>
-      <div
-        className='relative px-4 bg-center bg-no-repeat bg-cover bg-main text-light'
-        style={{ backgroundImage: `url(${banner})` }}
-      >
-        <div className='absolute inset-0 opacity-75 bg-dark'></div>
+      <div className='max-w-3xl px-8 mx-auto'>
+        <div style={{ height: '100px' }}></div>
 
-        <div className='relative flex flex-col justify-center max-w-3xl px-8 mx-auto h-96'>
-          <h1 className='mb-2 text-5xl font-semibold'>{title}</h1>
-          <p className='text-lg'>{description}</p>
+        <h1 className='text-2xl font-semibold text-title'>{title}</h1>
+        <time className='text-xs text-muted'>20/04/2021</time>
+
+        <div className='mt-4 mb-1'>
+          <BreadCrumbs />
         </div>
+
+        <img
+          src={banner}
+          alt={title}
+          className='object-cover w-full rounded-xl max-h-80'
+        />
       </div>
 
-      <div className='max-w-3xl px-8 py-4 mx-auto'>
-        <BreadCrumbs />
-      </div>
-
-      <div className='container pt-10 pb-20 mx-auto'>{children}</div>
+      <div className='container pt-6 pb-20 mx-auto'>{children}</div>
     </DefaultLayout>
   )
 }

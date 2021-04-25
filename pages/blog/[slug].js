@@ -6,7 +6,7 @@ function Blog({ post }) {
     <PostsLayout
       title={post.metadata.title}
       description={post.metadata.description}
-      banner={post.metadata.banner}
+      banner={post.metadata.cover}
     >
       <div
         className='px-4 mx-auto prose prose-xl prose-main'
@@ -18,6 +18,7 @@ function Blog({ post }) {
 
 export async function getStaticProps({ params: { slug } }) {
   const post = await getPostBySlug(slug)
+  console.log(post)
 
   return {
     props: {

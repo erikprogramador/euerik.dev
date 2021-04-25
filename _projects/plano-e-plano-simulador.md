@@ -7,8 +7,6 @@ banner: '/static/banners/simulaplano.png'
 color: 'bg-branding-simulaplano'
 ---
 
-## Plano&Plano Simulador
-
 Chatbot de simulação de financiamento imobiliário. Tem o objetivo de tornar a experiência de simulação imobiliária muito mais intuitiva e otimizada.
 
 ![Print do chat do simulador](/static/projetos/planoeplano-simulador-chat.png "Print do chat do simulador")
