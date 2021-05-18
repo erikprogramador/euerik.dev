@@ -1,5 +1,4 @@
 import DefaultLayout from '@layouts/DefaultLayout'
-import Header from '@components/Header'
 import BreadCrumbs from '@components/BreadCrumbs'
 
 function ProjectLayout({ children, title, description, banner }) {
