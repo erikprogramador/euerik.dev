@@ -83,7 +83,7 @@ function Header() {
               Projetos
             </a>
           </NextLink>
-          <div class='flex items-center space-x-6'>
+          <div className='flex items-center space-x-6'>
             <a
               href='https://www.youtube.com/channel/UCmnImNyVL1wwb4f7MpG8VIg'
               target='_blank'
