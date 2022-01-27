@@ -1,5 +1,5 @@
 function BaseButton(props) {
-  const { color = 'main' } = props
+  let { color = 'main' } = props
   return (
     <a
       className={`inline-flex itens-center relative justify-center pl-10 pr-16 py-3 outline-none rounded-xl bg-${color} text-light focus:outline-none`}
