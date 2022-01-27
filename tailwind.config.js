@@ -8,6 +8,9 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ['"Poppins"', 'Helvetica', 'Arial', 'sans-serif'],
+    },
     colors: {
       light: '#ffffff',
       dark: '#000000',

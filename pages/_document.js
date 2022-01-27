@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default class CustomDocument extends Document {
   render() {
     return (
-      <Html lang='pt-BR'>
+      <Html lang="pt-BR">
         <Head>
           <script
             dangerouslySetInnerHTML={{
@@ -14,13 +14,20 @@ export default class CustomDocument extends Document {
             })(window,document,'script','dataLayer','${process.env.GTM_KEY}');`,
             }}
           ></script>
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+            rel="stylesheet"
+          />
         </Head>
-        <body>
+        <body class="font-sans">
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM_KEY}`}
-              height='0'
-              width='0'
+              height="0"
+              width="0"
               style={{ display: 'none', visibility: 'hidden' }}
             ></iframe>
           </noscript>
