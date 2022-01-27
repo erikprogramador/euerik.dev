@@ -1,9 +1,9 @@
-import CleanLayout from '@components/layouts/CleanLayout'
+import DefaultLayout from '@components/layouts/DefaultLayout'
 import NextLink from 'next/link'
 
 function FourOhFour({ projects }) {
   return (
-    <CleanLayout
+    <DefaultLayout
       title='Erik Vanderlei Fernandes - EuErik.dev'
       description='Desenvolvedor por paixão, Designer por curiosidade, Empreendedor por natureza'
     >
@@ -27,7 +27,7 @@ function FourOhFour({ projects }) {
           </NextLink>
         </div>
       </section>
-    </CleanLayout>
+    </DefaultLa>
   )
 }
 
