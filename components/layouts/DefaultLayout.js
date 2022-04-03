@@ -34,7 +34,7 @@ function DefaultLayout({ children, title, description }) {
 
       <Header />
 
-      <div class="w-screen overflow-x-hidden">{children}</div>
+      <div className="w-screen overflow-x-hidden">{children}</div>
 
       <Footer />
     </>

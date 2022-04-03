@@ -1,5 +1,5 @@
 function BaseButton(props) {
-  let { color = 'main' } = props
+  let { color = 'main' } = props;
   return (
     <a
       className={`inline-flex itens-center relative justify-center pl-10 pr-16 py-3 outline-none rounded-xl bg-${color} text-light focus:outline-none`}
@@ -7,7 +7,7 @@ function BaseButton(props) {
     >
       {props.children}
       <svg
-        class="w-6 h-6 absolute right-4 top-1/2 transform -translate-y-1/2"
+        className="w-6 h-6 absolute right-4 top-1/2 transform -translate-y-1/2"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ function BaseButton(props) {
         ></path>
       </svg>
     </a>
-  )
+  );
 }
 
-export default BaseButton
+export default BaseButton;

@@ -22,7 +22,7 @@ export default class CustomDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body class="font-sans">
+        <body className="font-sans">
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM_KEY}`}

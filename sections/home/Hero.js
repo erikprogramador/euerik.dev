@@ -4,9 +4,14 @@ import AdalovBtn from '@components/AdalovBtn';
 export default function Hero() {
   return (
     <section
-      className="flex items-center bg-right bg-no-repeat bg-contain"
-      style={{ backgroundImage: `url('/static/hero.svg')`, height: '700px' }}
+      className="flex items-center justify-center md:justify-start flex-col md:flex-row relative"
+      style={{ height: '70vh' }}
     >
+      <img
+        src="/static/hero.svg"
+        alt="Ilustração de conexões"
+        className="hidden md:block md:absolute md:right-0 md:top-0"
+      />
       <div className="container px-6 mx-auto sm:px-0">
         <span className="font-bold text-primary">
           Olá, meu nome é Erik Vanderlei Fernandes
@@ -18,7 +23,7 @@ export default function Hero() {
           <strong>Empreendedor</strong> por natureza
         </h1>
 
-        <div className="flex items-center justify-start space-x-6">
+        <div className="flex items-start justify-start space-y-6 mt-6 md:items-center md:space-y-0 md:space-x-6 flex-col md:flex-row">
           <LinkedinBtn />
           <AdalovBtn />
         </div>

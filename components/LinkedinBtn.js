@@ -3,7 +3,7 @@ export default function LinkedinBtn() {
     <a
       href="https://www.linkedin.com/in/erik-vanderlei-fernandes/"
       target="_blank"
-      className="bg-main font-bold text-lg text-light inline-flex py-2 pl-2 pr-6 rounded-md items-center justify-start space-x-4"
+      className="bg-main w-full md:w-auto text-light md:text-lg font-bold inline-flex py-2 pl-3 pr-6 rounded-md items-center justify-center md:justify-start space-x-4"
     >
       <svg
         width="32"

@@ -4,8 +4,8 @@ import OnTheWebItem from '@components/OnTheWebItem';
 
 export default function OnTheWeb() {
   return (
-    <section className="py-28">
-      <div className="container mx-auto">
+    <section className="py-12 md:py-28">
+      <div className="container mx-auto px-4">
         <h2 className="font-bold text-4xl mb-10">Na Web</h2>
         <p className="text-dark max-w-4xl mb-8">
           Acredito muito que o conhecimento é a base do crescimento de qualquer
@@ -14,7 +14,7 @@ export default function OnTheWeb() {
           participado de um artigo no Canaltech. Isso tudo você vai conseguir
           conferir abaixo.
         </p>
-        <div className="grid grid-cols-3 gap-10 mb-16">
+        <div className="grid md:grid-cols-3 gap-10 mb-6 md:mb-16">
           <OnTheWebItem
             image="/static/laraconf-brasil-2018.jpeg"
             title="Laravel e seu ecossistema v1.0"
@@ -38,7 +38,7 @@ export default function OnTheWeb() {
           />
         </div>
 
-        <div className="flex items-center justify-center space-x-6">
+        <div className="flex items-start justify-start space-y-6 md:justify-center md:items-center md:space-y-0 md:space-x-6 flex-col md:flex-row">
           <LinkedinBtn />
           <AdalovBtn />
         </div>
