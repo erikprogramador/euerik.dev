@@ -19,6 +19,10 @@ function DefaultLayout({ children, title, description }) {
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="@erikvfernandes" key="twhandle" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        ></meta>
 
         {/* Open Graph */}
         <meta property="og:url" content="https://euerik.dev/" key="ogurl" />
