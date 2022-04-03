@@ -9,23 +9,17 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Poppins"', 'Helvetica', 'Arial', 'sans-serif'],
+      sans: ['"Mukta"', 'Helvetica', 'Arial', 'sans-serif'],
     },
     colors: {
       light: '#ffffff',
-      dark: '#000000',
-      main: '#4025E8',
-      title: '#080520',
-      body: '#272536',
-      muted: '#bbbbbb',
-      branding: {
-        adalov: '#000000',
-        simulaimob: '#C4CAEB',
-        simulaplano: '#FF1617',
-        salescity: '#1A1A1A',
-        linkedin: '#0077b5',
-        youtube: '#ff0000',
-      },
+      dark: '#211B13',
+      main: '#193158',
+      secondary: '#E4B4C3',
+      title: '#211B13',
+      body: '#211B13',
+      muted: '#737373',
+      adalov: '#E3DBCF',
       transparent: 'transparent',
     },
   },
@@ -33,4 +27,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require('@tailwindcss/typography')],
-}
+};
