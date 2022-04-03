@@ -1,6 +1,6 @@
 import Hero from '@sections/home/Hero';
 import DefaultLayout from '@layouts/DefaultLayout';
-import About from '@sections/home/about';
+import About from '@sections/home/About';
 import Adalov from '@sections/home/Adalov';
 import OnTheWeb from '@sections/home/OnTheWeb';
 
