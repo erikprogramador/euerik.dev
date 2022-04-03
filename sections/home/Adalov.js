@@ -2,7 +2,7 @@ import AdalovBtn from '@components/AdalovBtn';
 
 export default function Adalov() {
   return (
-    <section className="py-12 md:py-48 bg-adalov">
+    <section className="py-12 md:py-28 bg-adalov">
       <div className="container mx-auto grid md:grid-cols-12 gap-10 px-4">
         <div className="text-dark md:col-span-8">
           <h2 className="font-bold text-4xl mb-10">Me conheça melhor</h2>
